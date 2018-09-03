@@ -6,13 +6,13 @@ class Menu extends React.Component {
   render() {
     return (
       <div className="column">
-        <h1>You Needs Cats? We've Got Em!</h1>
 
         <select onChange={this.props.changeFilter} value={this.props.value}>
           <option value="all">All Cats</option>
           <option value="black">Black Cats</option>
           <option value="orange">Orange Cats</option>
-          <option value="cool">Cool Cats</option>
+          <option value="gray">Gray Cats</option>
+          <option value="white">White Cats</option>
         </select>
 
         <div className="cat-menu">

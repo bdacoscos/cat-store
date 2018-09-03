@@ -12,11 +12,14 @@ class App extends React.Component {
     filter: 'all'
   };
 
-  changeFilter = evt => {
-    // based on filter, render proper view
 
+
+  changeFilter = evt => {
+
+    const filters = ['all', 'black', 'orange', 'gray', 'white']
     // take a copy of the cats state?
-    //const cats = {...this.state.cats};
+    const cats = {...this.state.cats};
+    const filteredCats = [];
 
     this.setState({ filter: evt.target.value });
   }

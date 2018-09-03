@@ -36,7 +36,7 @@ class CheckoutForm extends React.Component {
     if (this.state.complete) return <h1>Purchase Complete</h1>;
 
     return (
-      <div className="checkout">
+      <div className="payment">
         <p>Ready to buy these cats? GIVE US YOUR MONEY.</p>
         <CardElement />
         <div>

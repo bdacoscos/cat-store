@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/style.css";
+import { formatPrice } from "../../helpers";
 
 class Cat extends React.Component {
 
@@ -13,7 +14,7 @@ class Cat extends React.Component {
           <img src={image} alt={name} />
           <h3>
             {name}
-            <span className="price">{price}</span>
+            <span className="price">{formatPrice(price)}</span>
           </h3>
           <button onClick={() => this.props.addToOrder(this.props.index)}>
             Add Cat

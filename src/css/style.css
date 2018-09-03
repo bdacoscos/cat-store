@@ -1,9 +1,31 @@
 body {
   margin: 0;
-  padding: 40px 20px;
+  padding: 40px 80px;
 }
 
 .cat {
   min-width: 200px;
   max-width: 300px;
+}
+
+.price {
+  float: right;
+}
+
+.order div {
+  padding: 20px 0px;
+  margin-left: 30px;
+}
+
+.payment {
+  margin: 30px 0px;
+}
+
+li.item > span {
+  list-style: none;
+  padding-right: 10px;
+}
+
+.items {
+  margin-bottom:20px;
 }
