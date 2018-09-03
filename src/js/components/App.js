@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/style.css";
+import { connect } from "react-redux";
 import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Order from "../components/Order";
@@ -39,7 +40,7 @@ class App extends React.Component {
         <Header />
         <div className="columns">
           <Menu
-            cats={this.state.cats}
+            cats={this.props.cats}
             filter={this.state.filter}
             changeFilter={this.changeFilter}
             addToOrder={this.addToOrder}

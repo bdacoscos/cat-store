@@ -37,4 +37,11 @@ const cats = {
   }
 };
 
-export default cats;
+// getCats method...
+// const getCats = () => {
+//   return cats;
+// }
+
+export default {
+  cats
+};
